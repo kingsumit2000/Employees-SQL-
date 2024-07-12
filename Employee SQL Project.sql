@@ -300,13 +300,7 @@ SELECT * FROM Department;
 SELECT * FROM location;
 SELECT * FROM job;
 
---13.	DISPLAY THE EMPLOYEE DETAILS WHO EARN MORE THAN THEIR MANAGERS SALARIES.
-
---14.	SHOW THE NO. OF EMPLOYEES WORKING UNDER EVERY MANAGER.
-
---15.	DISPLAY EMPLOYEE DETAILS WITH THEIR MANAGER NAMES.
-
---16.	DISPLAY ALL EMPLOYEES IN SALES OR OPERATION DEPARTMENTS.
+-13.	DISPLAY ALL EMPLOYEES IN SALES OR OPERATION DEPARTMENTS.
  select * from employee e, department d 
  where e.department_id=d.department_id and 
  d.Department_id=(select d.department_id where Name in ('sales' ,'opeartions'));
